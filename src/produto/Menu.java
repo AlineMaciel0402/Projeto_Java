@@ -1,15 +1,30 @@
 package produto;
 
 import java.util.Scanner;
+import produto.util.Cores;
+import produto.model.Camiseta;
+import produto.model.Caneca;
+import produto.model.Produto;
 
 public class Menu {
 
 	public static void main(String[] args) {
-	
+		
+		// Teste do Produto Caneca
+				Caneca c1 = new Caneca(1,"Caneca", 30.0f, "Porcelana", 365);
+				c1.visualizar();
+				
+		        // Teste da Camiseta
+				Camiseta cm1 = new Camiseta (2, "Camiseta", 40.0f, "Algodão", "M");
+				cm1.visualizar();
+		      
 		Scanner leia = new Scanner (System.in);
 		int opcao;
 		
 		while(true) {
+			
+			System.out.println(Cores.TEXT_RED+ Cores.ANSI_BLACK_BACKGROUND
+					+ "*****************************************************");
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
 			System.out.println("                IMPÉRIO DA ESTAMPA                   ");
@@ -19,20 +34,17 @@ public class Menu {
 			System.out.println("            1 - Cadastrar produto                    ");
 			System.out.println("            2 - Listar produtos                      ");
 			System.out.println("            3 - Buscar produto por código            ");
-			System.out.println("            4 - Adicionar produto ao carrinho        ");
-			System.out.println("            5 - Ver carrinho de compras              ");
-			System.out.println("            6 - Remover produto do carrinho          ");
-			System.out.println("            7 - Pagamento                            ");
-			System.out.println("            8 - Remover produto da lista             ");
-			System.out.println("            9 - Sair                                 ");
+			System.out.println("            4 - Comprar                              ");
+			System.out.println("            5 - Remover produto da lista             ");
+			System.out.println("            6 - Sair                                 ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("Entre com a opção desejada:                          ");
-			System.out.println("                                                     ");
+			System.out.println("                                                     " + Cores.TEXT_RESET);
 
 			opcao = leia.nextInt();
 			
-			if (opcao == 9) {
+			if (opcao == 6) {
 				System.out.println("\nImpério da Estampa - Você imagina, a gente cria!");
 				sobre();
                  leia.close();
@@ -53,22 +65,9 @@ public class Menu {
 
 					break;
 				case 4:
-					System.out.println("Adicionar produto ao carrinho\n\n");
-
-					break;
+					System.out.println("Comprar\n\n");
+				break;
 				case 5:
-					System.out.println("Ver carrinho de compras\n\n");
-
-					break;
-				case 6:
-					System.out.println("Remover produto do carrinho\n\n");
-
-					break;
-				case 7:
-					System.out.println("Pagamento\n\n");
-
-					break;
-				case 8:
 					System.out.println("Remover produto da lista\n\n");
 
 					break;
