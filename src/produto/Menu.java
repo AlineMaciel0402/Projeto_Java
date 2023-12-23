@@ -57,7 +57,7 @@ public class Menu {
             
             switch (opcao) {
             case 1:
-                System.out.print(Cores.TEXT_WHITE + Cores.ANSI_BLACK_BACKGROUND +"Cadastrar produto");
+                System.out.println(Cores.TEXT_WHITE + Cores.ANSI_BLACK_BACKGROUND +"Cadastrar produto");
                 System.out.print("Digite o tipo de produto (1 - Caneca, 2 - Camiseta): ");
                 int tipoProduto = leia.nextInt();
 
