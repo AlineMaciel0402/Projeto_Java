@@ -20,7 +20,7 @@ public class Menu {
 
         Caneca caneca = new Caneca(1, "Caneca", 30.0f, "Porcelana", 365);
         produtos.cadastrar(caneca);
-        Camiseta camiseta = new Camiseta(2, "Camiseta", 40.0f, "Algodão", "M");
+        Camiseta camiseta = new Camiseta(2, "Camiseta", 40.0f, "Médio", "Algodão");
         produtos.cadastrar(camiseta);
         
         
@@ -37,7 +37,7 @@ public class Menu {
 		System.out.println("            2 - Listar produtos                      ");
 		System.out.println("            3 - Buscar produto por código            ");
 		System.out.println("            4 - Comprar                              ");
-		System.out.println("            5 - Atualizar  produto da lista          ");
+		System.out.println("            5 - Atualizar produto da lista           ");
 		System.out.println("            6 - Remover produto da lista             ");
 		System.out.println("            7 - Sair                                 ");
 		System.out.println("                                                     ");
