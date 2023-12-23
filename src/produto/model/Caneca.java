@@ -5,9 +5,9 @@ public class Caneca extends Produto {
 	private String material;
 	private int capacidade;
 
-	public Caneca(int codigo, String nome, float valor, String material, int capacidade) {
+	public Caneca(int codigo, String nome, float valor, String material, int capacidade1) {
 		super(codigo, nome, valor);
-		this.capacidade = capacidade;
+		this.capacidade = capacidade1;
 		this.material = material;
 		
 	}

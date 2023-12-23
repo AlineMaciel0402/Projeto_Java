@@ -34,10 +34,10 @@ public abstract class Produto {
 	public boolean pagar(float valor) { 
 	    if(this.getPreco() <= valor) {
 	        this.setPreco(this.getPreco() - valor);
-	        System.out.println("\nCompra realizada!");
+	        System.out.println();
 	        return true;
 	    } else {
-	        System.out.println("\nCompra não realizada!");
+	        System.out.println();
 	        return false;
 	    }
 	}

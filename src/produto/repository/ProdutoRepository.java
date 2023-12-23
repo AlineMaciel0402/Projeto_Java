@@ -12,5 +12,5 @@ public interface ProdutoRepository {
 		
 		public void caneca ();
 		public void camiseta();
-
+		public void pagar(int codigo, float valor);
 }
